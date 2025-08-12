@@ -28,12 +28,12 @@ options:
 ## Usage Examples
 **Single domain:**
 ```
-echo "http://testphp.vulnweb.com" | python3 emailextractor.py
+echo "http://testphp.vulnweb.com" | emailextractor
 ```
 
 **Multiple domains:**
 ```
-cat domains.txt | python3 emailextractor.py
+cat domains.txt | emailextractor
 ```
 
 **domains.txt example:**
@@ -44,5 +44,5 @@ https://subdomain.test.org
 
 **Multiple domains with concurrency & timeout**
 ```
-cat domains.txt | python3 emailextractor.py -c 50 -t 5 --verbose
+cat domains.txt | emailextractor -c 50 -t 5 --verbose
 ```
